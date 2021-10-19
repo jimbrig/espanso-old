@@ -1,0 +1,11 @@
+name: emails
+parent: default
+
+matches:
+  - trigger: ":emailpwc"
+    replace: "jimmy.briggs@pwc.com"
+  - trigger: ":emailpersonal"
+    replace: "jimmy.briggs@jimbrig.com"
+  - trigger: ":emailgmail"
+    replace: "jimbrig2011@gmail.com"
+  

@@ -1,0 +1,8 @@
+name: phone-numbers
+parent: default
+
+matches:
+  - trigger: ":phonecell"
+    replace: "678-491-4856"
+  - trigger: ":phonework"
+    replace: "470-426-4147"

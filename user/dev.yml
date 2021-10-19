@@ -1,0 +1,6 @@
+name: developer
+parent: default
+
+matches:
+  - trigger: ":gitcrypt"
+    replace: " filter=git-crypt diff=git-crypt"

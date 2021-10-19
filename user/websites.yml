@@ -1,0 +1,8 @@
+name: websites
+parent: default
+
+matches:
+  - trigger: ":sitegh"
+    replace: "https://github.com/jimbrig"
+  - trigger: ":sitelinkedin"
+    replace: "https://www.linkedin.com/in/jimbrig/"
