@@ -78,8 +78,8 @@ The following table lays out all possible `filter_*` configurations:
 
 ***
 
-[^1]:
-
-- Linux: `$XDG_CONFIG_HOME/espanso` (e.g. `/home/user/.config/espanso`)
-- macOS: `$HOME/Library/Preferences/espanso` (e.g. `/Users/user/Library/Preferences/espanso`)
-- Windows: `{FOLDERID_RoamingAppData}\espanso` (e.g. `%APPDATA%\espanso)`)
+[^1]: File Paths are Operating Sysstem Dependent:  
+    - Linux: `$XDG_CONFIG_HOME/espanso` (e.g. `/home/user/.config/espanso`)
+    - macOS: `$HOME/Library/Preferences/espanso` (e.g. `/Users/user/Library/Preferences/espanso`)
+    - Windows: `{FOLDERID_RoamingAppData}\espanso` (e.g. `%APPDATA%\espanso)`)
+    
