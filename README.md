@@ -29,7 +29,7 @@ sudo cinst -y espanso
 
 ### Configuration
 
-`espanso` uses a file-based configuration approach. Simply run `espanso path` to determine the configuration folder's path. <sup>**[1]({#footnote})**</sup>
+`espanso` uses a file-based configuration approach. Simply run `espanso path` to determine the configuration folder's path.
 
 ```powershell
 > ~\AppData\Roaming\espanso :: git(main) 10:43:57
@@ -47,24 +47,15 @@ sudo cinst -y espanso
 1 directory, 7 files
 ```
 
-#### Footote {#footnote}
-
-- Linux: `$XDG_CONFIG_HOME/espanso` (e.g. `/home/user/.config/espanso`)
-- macOS: `$HOME/Library/Preferences/espanso` (e.g. `/Users/user/Library/Preferences/espanso`)
-- Windows: `{FOLDERID_RoamingAppData}\espanso` (e.g. `%APPDATA%\espanso)`)
-
-A quick way to find the path of your configuration folder is by using the following command:
-
-```powershell
-espanso path
-```
-
-Following from above, espanso scripts should be located at `%APPDATA%\espanso` with a file named `default.yml` and (optional) a sub-directory named `user` (i.e. `%APPDATA%\espanso\user`):
-
+`espanso` scripts should be located at `%APPDATA%\espanso` (on Windows) [^1] with a file named `default.yml` and (optionally) a sub-directory named `user` (i.e. `%APPDATA%\espanso\user`). Place sub-level child-scripts in the user folder.
 
 ## Editing
 
 For quick editing of espanso scripts run `espanso edit`.
+
+## Toggle (Important!)
+
+To toggle `espanso`'s runtime simply double-tab the `Alt` key. This makes it useful to temporarilly disable then re-enable the service.
 
 ## Application Specific
 
@@ -85,3 +76,10 @@ The following table lays out all possible `filter_*` configurations:
 | `filter_exec`  | Filter based on the current application executable path | Full support                                 | Full support                                        | Partial support |
 | `filter_class` | Filter based on the current Window class                | Uses the application executable path instead | Uses the App identifier instead                     | Full support    |
 
+***
+
+[^1]:
+
+- Linux: `$XDG_CONFIG_HOME/espanso` (e.g. `/home/user/.config/espanso`)
+- macOS: `$HOME/Library/Preferences/espanso` (e.g. `/Users/user/Library/Preferences/espanso`)
+- Windows: `{FOLDERID_RoamingAppData}\espanso` (e.g. `%APPDATA%\espanso)`)
