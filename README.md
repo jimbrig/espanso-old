@@ -47,7 +47,7 @@ sudo cinst -y espanso
 1 directory, 7 files
 ```
 
-#### Note
+#### Footote {#footnote}
 
 - Linux: `$XDG_CONFIG_HOME/espanso` (e.g. `/home/user/.config/espanso`)
 - macOS: `$HOME/Library/Preferences/espanso` (e.g. `/Users/user/Library/Preferences/espanso`)
