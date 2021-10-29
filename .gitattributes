@@ -1,1 +1,2 @@
 user/passwords.yml filter=git-crypt diff=git-crypt
+user/credit-c f filter=git-crypt diff=git-crypt
