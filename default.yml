@@ -25,3 +25,11 @@ matches:
         type: shell
         params:
           cmd: "echo Hello from your shell"
+  - trigger: ":greet"
+    form: |
+      Hey {{name}},
+      {{text}}
+      Happy Birthday!
+    form_fields:
+      text:
+        multiline: true
