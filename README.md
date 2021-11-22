@@ -38,16 +38,37 @@ sudo cinst -y espanso
 ├── README.md
 ├── default.yml
 └── user
+    ├── credit-cards.yml
+    ├── dev-secrets.yml
     ├── dev.yml
     ├── emails.yml
+    ├── links.yml
     ├── passwords.yml
     ├── phone-numbers.yml
     └── websites.yml
 
-1 directory, 7 files
+1 directory, 10 files
 ```
 
-`espanso` scripts should be located at `%APPDATA%\espanso` (on Windows) [^1] with a file named `default.yml` and (optionally) a sub-directory named `user` (i.e. `%APPDATA%\espanso\user`). Place sub-level child-scripts in the user folder.
+### Notes
+
+`espanso` scripts should be located at `%APPDATA%\espanso` (on Windows) [^1] with a file named `default.yml` and (optionally) a sub-directory named `user` 
+(i.e. `%APPDATA%\espanso\user`). 
+
+Place sub-level child-scripts in the user folder.
+
+## User Scripts
+
+Currently I have a total of 8 user-specific child scripts under parent *default.yml*, which are housed in the [user dirctory](user/):
+
+- [credit-cards.yml](user/credit-cards.yml): My credit cards [^2]
+- [dev-secrets.yml](user/dev-secrets.yml): Developer secrets [^2]
+- [dev.yml](user/dev.yml): Development related replacements (i.e. common code strings).
+- [emails.yml](user/emails.yml): My email addresses
+- [links.yml](user/links.yml): Personal websites
+- [passwords.yml](user/passwords.yml): My common passwords [^2]
+- [phone-numbers.yml](user/phone-numbers.yml): My cell phone numbers
+- [websites.yml](user/websites.yml): Similar to `links.yml`
 
 ## Editing
 
@@ -83,3 +104,5 @@ The following table lays out all possible `filter_*` configurations:
     - macOS: `$HOME/Library/Preferences/espanso` (e.g. `/Users/user/Library/Preferences/espanso`)
     - Windows: `{FOLDERID_RoamingAppData}\espanso` (e.g. `%APPDATA%\espanso)`)
     
+
+[^2]: Encrypted via [git-crypt](). 
