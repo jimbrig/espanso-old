@@ -1,0 +1,20 @@
+name: links
+parent: default
+
+matches:
+  - trigger: ":twitter"
+    replace: "https://twitter.com/jimbrig2011"
+  - trigger: ":github"
+    replace: "https://github.com/jimbrig"
+  - trigger: ":devfolio"
+    replace: "https://devfolio.jimbrig.com"
+  - trigger: ":linkedin"
+    replace: "https://www.linkedin.com/in/jimbrig/"
+  - trigger: ":reddit"
+    replace: "https://www.reddit.com/user/jimbrig2011"
+  - trigger: ":raindrop"
+    replace: "https://raindrop.io/jimbrig/" 
+  - trigger: ":feedly"
+    replace: "https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Ffeedly.com%2Ff%2FqOVW62nvaI7U3Fp6BLtRqKnY"
+  - trigger: ":kaas"
+    replace: "https://publish.obsidian.md/kaas/"
