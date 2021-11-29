@@ -1,0 +1,22 @@
+name: wbs-codes
+parent: default
+
+matches:
+  - trigger: ":wbsrezlife"
+    replace: "01703350001"
+  - trigger: ":wbsrezmod"
+    replace: "80144454001"
+  - trigger: ":wbsonboarding"
+    replace: "80114330001"
+  - trigger: ":wbsameritas"
+    replace: "01628796001"
+  - trigger: ":wbsafa"
+    replace: "40035613001"
+  - trigger: ":wbsdavid"
+    replace: "80144450001"
+  - trigger: ":wbsdavid"
+    replace: "80144450001"
+  - trigger: ":wbstim"
+    replace: "80144454001"
+  - trigger: ":wbsstephen"
+    replace: "80114330001"
