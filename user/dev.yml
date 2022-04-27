@@ -8,3 +8,9 @@ matches:
     replace: "<details><summary>View</summary><p>\n\n</p></details>"
   - trigger: ":titleimage"
     replace: '<h1>TITLE</h1><p><img align="right" style="float" height="45px" href="#" src="#"></p>'
+  - trigger: ":~%"
+    replace: "%USERPROFILE%"
+  - trigger: ":#!b"
+    replace: "#!/usr/bin/env bash"
+  - trigger: ":#!s"
+    replace: "#!/usr/bin/env sh"
