@@ -22,3 +22,7 @@ matches:
     replace: "#!/usr/bin/env python3"
   - trigger: ":#!expect"
     replace: "#!/usr/bin/expect -f"
+  # ~ for %USERPROFILE%
+  - trigger: ":~%"
+    replace: "%USERPROFILE%"
+  

@@ -21,11 +21,24 @@ Links: [Espanso Website](https://espanso.org/) | [EspansoHub](https://hub.espans
 
 ### Installation
 
+Install via on Windows using a package manager of choice: 
+
+- `winget`
+- `chocolatey`
+- `scoop`
+
 ```powershell
+# winget
+winget install FedericoTerzi.espanso
+
+# chocolatey
 sudo cinst -y espanso
+
+# scoop 
+scoop install espanso
 ```
 
-`espanso` should launch at startup, but to check run `espanso status`, and if it say "espanso is not running" then run `espanso start`.
+`espanso` should launch at startup, but to check run `espanso status`, and if it says *`espanso is not running`* then run *`espanso start`*.
 
 ### Configuration
 
