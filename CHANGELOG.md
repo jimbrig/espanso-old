@@ -1,4 +1,5 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 ## [unreleased]
@@ -23,6 +24,11 @@ All notable changes to this project will be documented in this file.
 - Add WBS codes to espanso and add ameritas pws to passwords
 - Updated git-crypt gpg keys
 - Add new dev expanders, re-encrypt
+- Add shebangs to dev snippets
+
+### Miscellaneous Tasks
+
+- Autopublish 2022-04-27T03:33:47Z
 
 ### Bug
 
