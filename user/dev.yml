@@ -2,9 +2,23 @@ name: developer
 parent: default
 
 matches:
+  # git-crypt .gitattributes snippet
   - trigger: ":gitcrypt"
     replace: " filter=git-crypt diff=git-crypt"
+  # markdown HTML details/summary collapsible dropdown
   - trigger: ":details"
     replace: "<details><summary>View</summary><p>\n\n</p></details>"
+  # HTML title w/ image
   - trigger: ":titleimage"
     replace: '<h1>TITLE</h1><p><img align="right" style="float" height="45px" href="#" src="#"></p>'
+  # UNIX shebangs
+  - trigger: ":#!sh"
+    replace: "#!/usr/bin/env sh"
+  - trigger: ":#!bash"
+    replace: "#!/usr/bin/env bash"
+  - trigger: ":#!pwsh"
+    replace: "#!/usr/bin/env pwsh"
+  - trigger: ":#!python"
+    replace: "#!/usr/bin/env python3"
+  - trigger: ":#!expect"
+    replace: "#!/usr/bin/expect -f"
